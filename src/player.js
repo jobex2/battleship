@@ -2,7 +2,8 @@ const Player = (name) => {
   const attack = (coordinates) => {
       return coordinates;
   }
-  return {attack};
+  const getName = () => name;
+  return {attack, getName};
 }
 
 const Computer = () => {

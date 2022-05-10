@@ -1,0 +1,71 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5em;
+    color:white
+}
+
+.boards{
+    display: flex;
+    justify-content: space-around;
+}
+.player1-container, .player2-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.player1-name, .player2-name {
+    font-size: 2em;
+    color: white;
+}
+
+#player1-board, #player2-board{
+    margin: 2em;
+    height: 100%;
+    width: 100%;
+    border-style: solid;
+    border-color: black;
+    border-width: medium;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+
+
+.square-player1-board, .square-player2-board{
+    box-sizing: border-box;
+    background-color:azure; 
+    width: 10%;
+    padding-bottom: 10%;
+    position: relative;
+    border: solid black;
+    flex-shrink: 1;
+}
+
+.ship {
+    background-color: slategrey;
+}
+
+.miss {
+    background-image: url(./black_dot.png);
+    background-position: center center;
+    background-repeat: none;
+    background-size: 80%;
+}
+
+.hit {
+    background-image: url(./red_dot.png);
+    background-position: 49% 45%;
+    background-repeat: none;
+    background-size: 500%;
+}
+
+.square-player2-board:hover{
+    background-color:rgb(89, 172, 103); 
+}
